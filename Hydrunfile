@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+# Frontend
+if [ "$1" = "pwa" ]; then
+    # Install Hugo
+    apk add curl make hugo npm
+
+    # Generate dependencies
+    make depend
+
+    # Build
+    make build-pwa/ps-pwa
+
+    exit 0
+fi
