@@ -1,14 +1,18 @@
 {{ define "header" }}
-  <header
-    class="pf-c-page__header pf-c-page__header--max-width pf-c-page__header--overlay pf-c-page__header--overlay--index pf-x-u-white-space-nowrap pf-x-u-overflow-x-auto"
-  >
-    Hello, Morniteaque!
+  <header>
+    <img src="/img/logo-light.webp" alt="Morniteaque logo" />
+
+    <p>Freshly brewed libre software projects.</p>
   </header>
 {{ end }}
 
 {{ define "main" }}
-  <main class="pf-c-page__main" tabindex="-1" id="main">
-    Hello, Morniteaque!
+  <main tabindex="-1" id="main">
+    <a href="https://github.com/morniteaque" target="_blank">Browse projects</a>
+    <a href="https://github.com/orgs/morniteaque/people" target="_blank"
+      >See members</a
+    >
+
     {{ partial "footer" . }}
   </main>
 {{ end }}

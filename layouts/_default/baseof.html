@@ -33,17 +33,17 @@
     />
   </head>
   <body>
-    <div class="pf-c-page pf-c-page--background">
-      <a class="pf-c-skip-to-content pf-c-button pf-m-primary" href="#main"
-        >Skip to content</a
-      >
+    <div>
+      <a href="#main">Skip to content</a>
 
       {{ block "header" . }}
-        <header class="pf-c-page__header">Hello, Morniteaque!</header>
+        <header>
+          <a href="/">Back</a>
+        </header>
       {{ end }}
 
       {{ block "main" . }}
-        <main class="pf-c-page__main" tabindex="-1" id="main">
+        <main tabindex="-1" id="main">
           {{ .Content }}
         </main>
       {{ end }}
