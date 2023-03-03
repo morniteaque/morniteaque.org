@@ -36,11 +36,11 @@ $(addprefix uninstall-pwa/,$(sts)):
 
 # Run
 run:
-	hugo server --baseUrl=/
+	hugo server
 
 # Develop
 dev:
-	hugo server -D --baseUrl=/
+	hugo server -D
 
 # Clean
 clean:
