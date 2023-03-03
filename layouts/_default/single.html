@@ -1,6 +1,10 @@
 {{ define "main" }}
-  <main tabindex="-1" id="main">
-    {{ .Content }}
+  <main class="pf-c-page__main" tabindex="-1" id="main">
+    <section class="pf-c-page__main-section pf-m-light">
+      <div class="pf-c-page__main pf-c-content pf-x--container">
+        {{ .Content }}
+      </div>
+    </section>
 
     {{ partial "footer" . }}
   </main>

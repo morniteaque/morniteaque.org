@@ -33,17 +33,25 @@
     />
   </head>
   <body>
-    <div>
-      <a href="#main">Skip to content</a>
+    <div class="pf-c-page">
+      <a class="pf-c-skip-to-content pf-c-button pf-m-primary" href="#main"
+        >Skip to content</a
+      >
 
       {{ block "header" . }}
-        <header>
-          <a href="/">Back</a>
+        <header class="pf-c-page__header">
+          <div class="pf-c-page__header-brand">
+            <div class="pf-c-page__header__content">
+              <a href="{{ .Site.BaseURL }}" class="pf-c-page__header-brand-link"
+                >Back</a
+              >
+            </div>
+          </div>
         </header>
       {{ end }}
 
       {{ block "main" . }}
-        <main tabindex="-1" id="main">
+        <main class="pf-c-page__main" tabindex="-1" id="main">
           {{ .Content }}
         </main>
       {{ end }}

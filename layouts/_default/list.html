@@ -1,34 +1,3 @@
 {{ define "main" }}
-  <main tabindex="-1" id="main">
-    {{ .Content }}
-
-
-    <ul>
-      {{ range .Pages }}
-
-        <li>
-          <a href="{{ .Permalink }}">
-            <img
-              src="{{ ((index .Resources 0).Resize `500x`).Permalink }}"
-              alt="{{ .Params.HeaderAlt }}"
-            />
-
-            <div>
-              {{ .Title }}
-            </div>
-            {{ if .Params.Excerpt }}
-              <div>
-                {{ .Params.Excerpt }}
-              </div>
-            {{ end }}
-            <div>
-              {{ .Date | time.Format ":date_long" }}
-            </div>
-          </a>
-        </li>
-      {{ end }}
-    </ul>
-
-    {{ partial "footer" . }}
-  </main>
+  <!-- No listings are required -->
 {{ end }}

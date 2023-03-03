@@ -1,13 +1,13 @@
 {{ define "header" }}
-  <header>
-    <img src="/img/logo-light.webp" alt="Morniteaque logo" />
-
-    <p>Freshly brewed libre software projects.</p>
-  </header>
+  <!-- No header is required on the index -->
 {{ end }}
 
 {{ define "main" }}
-  <main tabindex="-1" id="main">
+  <main class="pf-c-page__main" tabindex="-1" id="main">
+    <img src="/img/logo-light.webp" alt="Morniteaque logo" />
+
+    <p>Freshly brewed libre software projects.</p>
+
     <a href="https://github.com/morniteaque" target="_blank">Browse projects</a>
     <a href="https://github.com/orgs/morniteaque/people" target="_blank"
       >See members</a
