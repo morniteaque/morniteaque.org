@@ -4,14 +4,22 @@
 
 {{ define "main" }}
   <main class="pf-c-page__main" tabindex="-1" id="main">
-    <img src="/img/logo-light.webp" alt="Morniteaque logo" />
+    <div class="pf-x-hero">
+      <img
+        class="pf-x-hero__logo"
+        src="/img/logo-light.webp"
+        alt="Morniteaque logo"
+      />
 
-    <p>Freshly brewed libre software projects.</p>
+      <p>Freshly brewed libre software projects.</p>
 
-    <a href="https://github.com/morniteaque" target="_blank">Browse projects</a>
-    <a href="https://github.com/orgs/morniteaque/people" target="_blank"
-      >See members</a
-    >
+      <a href="https://github.com/morniteaque" target="_blank"
+        >Browse projects</a
+      >
+      <a href="https://github.com/orgs/morniteaque/people" target="_blank"
+        >See members</a
+      >
+    </div>
 
     {{ partial "footer" . }}
   </main>
