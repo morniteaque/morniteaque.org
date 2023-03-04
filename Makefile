@@ -36,11 +36,11 @@ $(addprefix uninstall-pwa/,$(sts)):
 
 # Run
 run:
-	hugo server
+	hugo server --baseUrl=/ --appendPort=false
 
 # Develop
 dev:
-	hugo server -D
+	hugo server -D --baseUrl=/ --appendPort=false
 
 # Clean
 clean:
@@ -53,4 +53,3 @@ depend:
 	rm -rf static/fonts
 	mkdir -p static
 	cp -r node_modules/@patternfly/patternfly/assets/fonts static
-	cp -r node_modules/@fontsource/lato/files static/fonts/lato

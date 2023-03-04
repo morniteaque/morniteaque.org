@@ -13,8 +13,7 @@
       {{ end }}
     </title>
 
-    <!-- TODO: Add favicon -->
-    <!-- <link rel="icon" href="{{ .Site.Data.person.img }}" /> -->
+    <link rel="icon" href="/img/icon-light.png" />
 
     <meta name="author" content="{{ .Site.Data.site.author }}" />
     <meta name="description" content="{{ .Site.Data.site.description }}" />
@@ -42,8 +41,11 @@
         <header class="pf-c-page__header">
           <div class="pf-c-page__header-brand">
             <div class="pf-c-page__header__content">
-              <a href="{{ .Site.BaseURL }}" class="pf-c-page__header-brand-link"
-                >Back</a
+              <a class="pf-c-button pf-m-plain" href="{{ .Site.BaseURL }}">
+                <span class="pf-c-button__icon pf-m-start">
+                  <i class="fas fa-arrow-left	" aria-hidden="true"></i>
+                </span>
+                Back</a
               >
             </div>
           </div>

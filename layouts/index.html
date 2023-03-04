@@ -3,22 +3,41 @@
 {{ end }}
 
 {{ define "main" }}
-  <main class="pf-c-page__main" tabindex="-1" id="main">
+  <main class="pf-c-page__main pf-c-page__main--bg" tabindex="-1" id="main">
     <div class="pf-x-hero">
       <img
         class="pf-x-hero__logo"
-        src="/img/logo-light.webp"
-        alt="Morniteaque logo"
+        src="/img/logo-light.svg"
+        alt="{{ .Site.Title }} logo"
       />
 
-      <p>Freshly brewed libre software projects.</p>
+      <div class="pf-u-font-size-lg pf-u-font-weight-bold pf-u-my-lg">
+        {{ .Site.Data.organisation.description }}
+      </div>
 
-      <a href="https://github.com/morniteaque" target="_blank"
-        >Browse projects</a
-      >
-      <a href="https://github.com/orgs/morniteaque/people" target="_blank"
-        >See members</a
-      >
+      <div>
+        <a
+          class="pf-c-button pf-m-primary pf-u-mr-sm pf-u-mb-md"
+          target="_blank"
+          href="{{ .Site.Data.organisation.projects }}"
+        >
+          <span class="pf-c-button__icon pf-m-start">
+            <i class="fas fa-search-plus" aria-hidden="true"></i>
+          </span>
+          Explore Projects</a
+        >
+
+        <a
+          class="pf-c-button pf-m-secondary pf-c-button--hero"
+          target="_blank"
+          href="{{ .Site.Data.organisation.members }}"
+        >
+          <span class="pf-c-button__icon pf-m-start">
+            <i class="fas fa-users" aria-hidden="true"></i>
+          </span>
+          Browse Members</a
+        >
+      </div>
     </div>
 
     {{ partial "footer" . }}
