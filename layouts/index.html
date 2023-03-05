@@ -6,9 +6,15 @@
   <main class="pf-c-page__main pf-c-page__main--bg" tabindex="-1" id="main">
     <div class="pf-x-hero">
       <img
-        class="pf-x-hero__logo"
+        class="pf-x-hero__logo pf-x-hero__logo--light"
         src="/img/logo-light.svg"
-        alt="{{ .Site.Title }} logo"
+        alt="{{ .Site.Title }} logo (light)"
+      />
+
+      <img
+        class="pf-x-hero__logo pf-x-hero__logo--dark"
+        src="/img/logo-dark.svg"
+        alt="{{ .Site.Title }} logo (dark)"
       />
 
       <div class="pf-u-font-size-lg pf-u-font-weight-bold pf-u-my-lg">
@@ -17,7 +23,7 @@
 
       <div>
         <a
-          class="pf-c-button pf-m-primary pf-u-mr-sm pf-u-mb-md"
+          class="pf-c-button pf-m-primary pf-u-mr-sm pf-u-mb-md pf-c-button--cta"
           target="_blank"
           href="{{ .Site.Data.organisation.projects }}"
         >
