@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Morniteaque</title>
+    <link>/</link>
+    <description>Recent content on Morniteaque</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Imprint/Impressum</title>
+      <link>/imprint/</link>
+      <pubDate>Thu, 30 Dec 2021 01:38:56 +0100</pubDate>
+      
+      <guid>/imprint/</guid>
+      <description>English Data according to § 5 TMG Felicitas Pojtinger Personal Site Hirschkopfweg 8 72270 Baiersbronn
+Contact Phone: 07442/50938 E-Mail: felicitas@pojtinger.com
+Responsible for the content according to § 55 Section 2 RStV Felicitas Pojtinger Hirschkopfweg 8 72270 Baiersbronn
+Mediation/Dispute Resolution The European Commission is providing a platform for online dispute resolution (OS): https://ec.europa.eu/consumers/odr You can find our e-mail address at the top of the imprint.
+We are not prepared or obliged to participate in dispute resolution proceedings before a consumer arbitration body to participate.</description>
+    </item>
+    
+  </channel>
+</rss>
