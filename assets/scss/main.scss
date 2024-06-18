@@ -23,24 +23,22 @@ $pf-global--BorderRadius--sm: 8px;
   align-items: center;
 
   &__logo {
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+
     width: 100%;
     max-width: 520px;
     border-radius: var(--pf-global--BorderRadius--sm);
 
-    &--light {
-      border: var(--pf-global--BorderWidth--sm) solid white;
+    border: var(--pf-global--BorderWidth--sm) solid white;
 
+    &--light {
       @media (prefers-color-scheme: dark) {
         display: none;
       }
     }
 
     &--dark {
-      box-shadow: inset 0 0 5px #fff, inset 2px 0 8px #4a292a,
-        inset -2px 0 8px #381e4a, inset 2px 0 30px #4a292a,
-        inset -2px 0 30px #381e4a, 0 0 5px #fff, -1px 0 8px #4a292a,
-        1px 0 8px #381e4a;
-
       @media (prefers-color-scheme: light) {
         display: none;
       }
@@ -52,7 +50,7 @@ $pf-global--BorderRadius--sm: 8px;
   color: var(--pf-global--Color--dark-100) !important;
 }
 
-.pf-c-page__main--bg {
+.pf-c-page {
   background: linear-gradient(#f58945ff, #aa585bff, #573170ff, #2d1d7aff);
 
   @media (prefers-color-scheme: dark) {
@@ -66,7 +64,18 @@ $pf-global--BorderRadius--sm: 8px;
   }
 }
 
+.pf-c-page__main {
+  background-size: 25px 25px !important;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 1px,
+    rgba(0, 0, 0, 0) 1px
+  ) !important;
+}
+
 .pf-c-button--hero {
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
   --pf-c-button--after--BorderColor: var(
     --pf-c-button--m-primary--Color
   ) !important;

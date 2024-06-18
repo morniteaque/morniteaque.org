@@ -16,7 +16,7 @@ build: $(addprefix build-pwa/,$(sts))
 # Build frontend
 $(addprefix build-pwa/,$(sts)):
 	mkdir -p $(OUTPUT_DIR)
-	hugo --baseUrl=/
+	hugo --baseURL=/
 	tar czvf $(OUTPUT_DIR)/$(subst build-pwa/,,$@).tar.gz -C public .
 
 # Install
@@ -36,11 +36,11 @@ $(addprefix uninstall-pwa/,$(sts)):
 
 # Run
 run:
-	hugo server --baseUrl=/ --appendPort=false
+	hugo server --baseURL=/ --appendPort=false
 
 # Develop
 dev:
-	hugo server -D --baseUrl=/ --appendPort=false
+	hugo server -D --baseURL=/ --appendPort=false
 
 # Clean
 clean:
