@@ -31,6 +31,7 @@ $pf-global--BorderRadius--sm: 8px;
     border-radius: var(--pf-global--BorderRadius--sm);
 
     border: var(--pf-global--BorderWidth--sm) solid white;
+    box-sizing: content-box;
 
     &--light {
       @media (prefers-color-scheme: dark) {
