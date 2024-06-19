@@ -35,17 +35,22 @@
     {{ end }}
   </head>
   <body>
-    <div class="pf-c-page">
-      <a class="pf-c-skip-to-content pf-c-button pf-m-primary" href="#main"
+    <div class="pf-v6-c-page">
+      <a
+        class="pf-v6-c-skip-to-content pf-v6-c-button pf-m-primary"
+        href="#main"
         >Skip to content</a
       >
 
       {{ block "header" . }}
-        <header class="pf-c-page__header">
-          <div class="pf-c-page__header-brand">
-            <div class="pf-c-page__header__content">
-              <a class="pf-c-button pf-m-plain" href="{{ .Site.BaseURL }}">
-                <span class="pf-c-button__icon pf-m-start">
+        <header class="pf-v6-c-page__header">
+          <div class="pf-v6-c-page__header-brand">
+            <div class="pf-v6-c-page__header__content">
+              <a
+                class="pf-v6-c-button pf-m-plain"
+                href="{{ .Site.BaseURL }}"
+              >
+                <span class="pf-v6-c-button__icon pf-m-start">
                   <i class="fas fa-arrow-left	" aria-hidden="true"></i>
                 </span>
                 Back</a
@@ -56,7 +61,7 @@
       {{ end }}
 
       {{ block "main" . }}
-        <main class="pf-c-page__main" tabindex="-1" id="main">
+        <main class="pf-v6-c-page__main" tabindex="-1" id="main">
           {{ .Content }}
         </main>
       {{ end }}
