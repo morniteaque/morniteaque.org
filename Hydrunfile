@@ -5,7 +5,7 @@ set -e
 # Frontend
 if [ "$1" = "pwa" ]; then
     # Install Hugo
-    apk add curl make hugo npm
+    apk add curl make hugo dart-sass npm
 
     # Generate dependencies
     make depend

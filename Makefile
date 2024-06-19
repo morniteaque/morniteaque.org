@@ -50,6 +50,6 @@ clean:
 depend:
 	npm i
 	find node_modules/@patternfly/patternfly/ -name "*.css" -type f -delete
-	rm -rf static/fonts
+	rm -rf static/assets
 	mkdir -p static
-	cp -r node_modules/@patternfly/patternfly/assets/fonts static
+	cp -r node_modules/@patternfly/patternfly/assets static
