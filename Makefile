@@ -44,7 +44,7 @@ dev:
 
 # Clean
 clean:
-	rm -rf out public resources
+	rm -rf out public resources static/assets
 
 # Dependencies
 depend:
