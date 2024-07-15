@@ -1,4 +1,7 @@
-<img alt="Project icon" style="vertical-align: middle;" src="./docs/icon-light.svg" width="128" height="128" align="left">
+<picture width="128" height="128" align="left">
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/icon-dark.svg">
+  <img alt="Project icon" src="./docs/icon-light.svg" width="128" height="128" align="left">
+</picture>
 
 # Morniteaque Site
 
