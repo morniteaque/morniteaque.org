@@ -53,7 +53,8 @@ $pf-v6-global--image-path: "data-url:./{{ .Site.BaseURL }}/assets/images";
 
   color: var(--pf-t--color--white);
 
-  & .pf-v6-x-footer a {
+  & .pf-v6-x-footer a,
+  & .pf-v6-x-footer i {
     color: var(--pf-t--color--white) !important;
   }
 }
@@ -85,4 +86,8 @@ $pf-v6-global--image-path: "data-url:./{{ .Site.BaseURL }}/assets/images";
   @media (prefers-color-scheme: light) {
     background: var(--pf-t--global--color--brand--default) !important;
   }
+}
+
+.pf-v6-x-m-no-decoration {
+  text-decoration: none !important;
 }

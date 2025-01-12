@@ -49,13 +49,54 @@
     <div class="pf-v6-c-page__main-body pf-v6-u-p-lg pf-v6-x-footer">
       <div class="pf-v6-l-flex pf-m-justify-content-space-between">
         <div class="pf-v6-l-flex__item">
-          <a href="{{ .Site.Data.site.source }}" target="_blank" rel="noopener"
-            >© {{ now.Year }} {{ .Site.Data.site.author }}</a
+          <a
+            href="{{ .Site.Data.site.source }}#license"
+            target="_blank"
+            rel="noopener"
+            class="pf-v6-x-m-no-decoration"
+            >© {{ now.Year }} {{ .Site.Data.site.author }} and contributors
+            (AGPL-3.0)</a
           >
         </div>
+
         <div class="pf-v6-l-flex__item">
-          <a href="https://felicitas.pojtinger.com/imprint" target="_blank"
-            >Imprint</a
+          <a
+            href="{{ .Site.Data.site.source }}"
+            target="_blank"
+            class="pf-v6-x-m-no-decoration pf-v6-u-mr-md"
+          >
+            <span class="pf-v6-c-icon pf-v6-u-mr-xs">
+              <span class="pf-v6-c-icon__content">
+                <i class="fas fa-code" aria-hidden="true"></i>
+              </span>
+            </span>
+            Code</a
+          >
+
+          <a
+            href="https://felicitas.pojtinger.com/privacy/static"
+            target="_blank"
+            class="pf-v6-x-m-no-decoration pf-v6-u-mr-md"
+          >
+            <span class="pf-v6-c-icon pf-v6-u-mr-xs">
+              <span class="pf-v6-c-icon__content">
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+              </span>
+            </span>
+            Privacy</a
+          >
+
+          <a
+            href="https://felicitas.pojtinger.com/imprint"
+            target="_blank"
+            class="pf-v6-x-m-no-decoration"
+          >
+            <span class="pf-v6-c-icon pf-v6-u-mr-xs">
+              <span class="pf-v6-c-icon__content">
+                <i class="fas fa-gavel" aria-hidden="true"></i>
+              </span>
+            </span>
+            Imprint</a
           >
         </div>
       </div>
