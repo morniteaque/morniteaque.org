@@ -2,7 +2,7 @@
 DESTDIR ?=
 
 WWWROOT ?= /var/www/html
-WWWPREFIX ?= /http://morniteaque.org/
+WWWPREFIX ?= /morniteaque.org
 
 OUTPUT_DIR ?= out
 

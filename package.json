@@ -1,5 +1,5 @@
 {
-  "name": "@morniteaque/personal-site",
+  "name": "@morniteaque/morniteaque.org",
   "version": "0.0.1",
   "description": "Site for Morniteaque.",
   "main": "index.js",
@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/morniteaque/morniteaque.org#readme",
   "dependencies": {
-    "@patternfly/patternfly": "^6.0.0-alpha.165"
+    "@patternfly/patternfly": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.8",
     "prettier-plugin-go-template": "^0.0.13"
   }
 }

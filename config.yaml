@@ -2,3 +2,7 @@ baseURL: /
 languageCode: en-us
 title: Morniteaque
 relativeURLs: true
+markup:
+  goldmark:
+    renderer:
+      hardWraps: true
